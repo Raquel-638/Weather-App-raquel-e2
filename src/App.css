@@ -1,7 +1,6 @@
 .app {
-    background: url('/img/fondo.jpg') center/cover;
-    min-height: 100vh;
-    padding: 6rem;
+  min-height: 100vh;
+  padding: 6rem;
 }
 
 .loader {
