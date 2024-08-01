@@ -14,7 +14,7 @@ function App() {
  const [showMessage, setShowMessage] = useState(false);
  const [city, setCity] = useState('');
  const [mesageError, setMesageError] = useState(false);
- const [background, setBackground] = useState('Weather App');
+ const [background, setBackground] = useState('light intensity shower rain');
 
  useEffect(() => {
   setTimeout(() => {
