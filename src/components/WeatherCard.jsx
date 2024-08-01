@@ -15,7 +15,7 @@ const WeatherCard = ({weather, temp, setCity, mesageError, city}) => {
     
     const inputSearch = useRef();
 
-  return <section className='card flex-container'>
+  return ( <section className='card flex-container'>
     <h1 className='card__title'>Weather App</h1>
     <h2 className='card__country'>{weather?.name}, {weather?.sys.country}</h2>
     <form onSubmit={handleSubmit}>
@@ -51,6 +51,7 @@ const WeatherCard = ({weather, temp, setCity, mesageError, city}) => {
     <h2 className="card__temp">{isCelsius ? `${temp?.celsius}°C` : `${temp?.fahrenheit}°F`}</h2>
     <button className="card__btn" onClick={changeDegrees}>Change to {isCelsius ? '°F' : '°C'}</button>
   </section>
+  );
 };
 
 export default WeatherCard
